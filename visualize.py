@@ -105,7 +105,7 @@ def draw_plot(ycol, ylabel, yfmt=None, draw_line=False):
             y=sub[ycol],
             mode='markers+text',
             name=f"{전형명}",
-            marker=dict(size=6, color=color, opacity=0.85, line=dict(width=1, color="white")),
+            marker=dict(size=15, color=color, opacity=0.85, line=dict(width=1, color="white")),
             text=value_text,
             textposition='top center',
             showlegend=True,
@@ -224,7 +224,7 @@ if not pred_filtered.empty:
             categoryarray=x_cuts
         ),
         yaxis=dict(title="등급", rangemode='tozero'),
-        height=500,
+        height=400,
         margin=dict(l=40, r=40, t=60, b=40),
         showlegend=False
     )
